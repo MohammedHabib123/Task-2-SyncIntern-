@@ -1,0 +1,64 @@
+.header{
+    text-align: center;
+    background-color:black;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.container{
+    width: 700px;
+    margin: auto;
+    padding: 20px;
+}
+.question{
+    border: 2px solid black;
+    border-radius: 7px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+label{
+    display: block;
+    padding: 7px;
+    border-radius: 7px;
+    cursor: pointer;
+    border: 1px dashed black;
+    margin-bottom: 4px;
+}
+label:hover{
+    background-color: aquamarine;
+}
+
+button{
+    width: 80%;
+    display: block;
+    margin: auto;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+}
+button:hover{
+    background-color: aquamarine;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+}
+h2{
+    text-align: center;
+}
+.question:checked{
+    background-color:aquamarine ;
+}
+#win{
+    width: 700px;
+    height: 300px;
+    display: none;
+}
+#fail{
+    width: 700px;
+    height: 300px;
+    margin-top: -63px;
+    display: none;
+    
+}

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>quiz game</title>
+</head>
+<body>
+    <div class="header">
+        <h1>Quiz game</h1>
+        <p>please choose the right answer</p>
+    </div>
+
+    <div class="container">
+        <div class="question">
+            <div class="q0">
+            <h3>What is the longest river in the world ?</h3>
+            <label >
+                <input type="radio" value="1" name="q0" onclick="Result(0,this)"> Mississippi River
+            </label>
+            <label >
+                <input type="radio" value="2" name="q0" onclick="Result(0,this)"> Amazon River
+            </label>
+            <label >
+                <input type="radio" value="3" name="q0" onclick="Result(0,this)"> Nile River
+            </label>
+            </div>
+        </div>
+        <div class="question">
+            <div class="q1">
+            <h3>What is the most spoken language in the world ?</h3>
+            <label >
+                <input type="radio" value="1" name="q1" onclick="Result(1,this)"> English
+            </label>
+            <label >
+                <input type="radio" value="2" name="q1" onclick="Result(1,this)"> Arabic
+            </label>
+            <label >
+                <input type="radio" value="3" name="q1" onclick="Result(1,this)"> Chiness
+            </label>
+            </div>
+        </div>
+        <div class="question">
+            <div class="q2">
+            <h3>What is the biggest animal in the world ?</h3>
+            <label >
+                <input type="radio" value="1" name="q2" onclick="Result(2,this)"> Ostriches
+            </label>
+            <label >
+                <input type="radio" value="2" name="q2" onclick="Result(2,this)"> Blue whale
+            </label>
+            <label >
+                <input type="radio" value="3" name="q2" onclick="Result(2,this)"> African elephants
+            </label>
+            </div>
+        </div>
+        <div class="question">
+            <div class="q3">
+            <h3>Who built the great pyramid of giza ?</h3>
+            <label >
+                <input type="radio" value="1" name="q3" onclick="Result(3,this)"> king Khufu
+            </label>
+            <label >
+                <input type="radio" value="2" name="q3" onclick="Result(3,this)"> king Mina
+            </label>
+            <label >
+                <input type="radio" value="3" name="q3" onclick="Result(3,this)"> king Ramesses II
+            </label>
+            </div>
+        </div>
+        <div class="question">
+            <div class="q4">
+            <h3>What is the tallest tower in the world ?</h3>
+            <label >
+                <input type="radio" value="1" name="q4" onclick="Result(4,this)"> Kyiv TV Tower
+            </label>
+            <label >
+                <input type="radio" value="2" name="q4" onclick="Result(4,this)"> Warisan Merdeka Tower
+            </label>
+            <label >
+                <input type="radio" value="3" name="q4" onclick="Result(4,this)"> Burj Khalifa
+            </label>
+           </div>
+        </div>
+        <div class="question">
+            <div class="q5">
+            <h3>The country that has won the most world cup ?</h3>
+            <label >
+                <input type="radio" value="1" name="q5" onclick="Result(5,this)"> Brazil
+            </label>
+            <label >
+                <input type="radio" value="2" name="q5" onclick="Result(5,this)"> Spain
+            </label>
+            <label >
+                <input type="radio" value="3" name="q5" onclick="Result(5,this)"> Italy
+            </label>
+           </div>
+        </div>
+        <div class="question">
+            <div class="q6">
+            <h3>What is the planet Mars called ?</h3>
+            <label >
+                <input type="radio" value="1" name="q6" onclick="Result(6,this)"> Blue planet
+            </label>
+            <label >
+                <input type="radio" value="2" name="q6" onclick="Result(6,this)"> red planet
+            </label>
+            <label >
+                <input type="radio" value="3" name="q6" onclick="Result(6,this)"> Yellow planet
+            </label>
+           </div>
+        </div>
+        <div class="question">
+            <div class="q7">
+            <h3>When did World War II end?</h3>
+            <label >
+                <input type="radio" value="1" name="q7" onclick="Result(7,this)"> In 1945
+            </label>
+            <label >
+                <input type="radio" value="2" name="q7" onclick="Result(7,this)"> In 1944
+            </label>
+            <label >
+                <input type="radio" value="3" name="q7" onclick="Result(7,this)"> In 1943
+            </label>
+           </div>
+        </div>
+        <div class="question">
+            <div class="q8">
+            <h3>What is the fastest animal in the world ?</h3>
+            <label >
+                <input type="radio" value="1" name="q8" onclick="Result(8,this)"> The cheetah
+            </label>
+            <label >
+                <input type="radio" value="2" name="q8" onclick="Result(8,this)"> The lion
+            </label>
+            <label >
+                <input type="radio" value="3" name="q8" onclick="Result(8,this)"> The Kangaroo
+            </label>
+           </div>
+        </div>
+        <div class="question">
+            <div class="q9">
+            <h3>What is the most abundant element in the air ?</h3>
+            <label >
+                <input type="radio" value="1" name="q9" onclick="Result(9,this)"> Carbon
+            </label>
+            <label >
+                <input type="radio" value="2" name="q9" onclick="Result(9,this)"> Oxygen
+            </label>
+            <label >
+                <input type="radio" value="3" name="q9" onclick="Result(9,this)"> Nitrogen
+            </label>
+           </div>
+        </div>
+        <button onclick="correct_answer()">Submit</button>
+        <h2>The result is : <span id="result"></span></h2>
+            <img id="win" src="gif/giphy.gif" alt="winner">
+            <img id="fail" src="gif/giphy (1).gif" alt="fail">
+
+        <script src="main.js"></script>
+    </div>
+</body>
+</html>
